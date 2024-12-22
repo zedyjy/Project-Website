@@ -11,9 +11,57 @@
       background: linear-gradient(to bottom, black, #555);
       color: white;
     }
+    /* Navbar styles */
+    nav {
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      align-items: center; /* Align items vertically in the center */
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    nav ul li a:hover {
+      color: #aaa;
+    }
+    
+    /* GitHub button styling */
+    .github-btn {
+      background-color: grey;
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 0;
+    }
+    
+    .github-btn:hover {
+      background-color: brown;
+    }
+
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 50px auto;
       padding: 20px;
     }
     .text-start {
@@ -28,10 +76,10 @@
       margin-bottom: 20px;
     }
     .card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
     }
     .card-body {
       padding: 20px;
@@ -43,10 +91,36 @@
     a:hover {
       color: #aaa;
     }
+    .logbook-btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #555;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .logbook-btn:hover {
+      background-color: #777;
+    }
   </style>
 </head>
 <body>
-  <section class="pb-5 position-relative">
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#projectspecification">Project Specification</a></li>
+      <li><a href="#projectsanalysis">Analysis and Requirement</a></li>
+      <li><a href="#projectteam">Project Team</a></li>
+      <li><a href="#demopresentation">Demo Presentation</a></li>
+      <li><a href="https://github.com/VeritasNews" target="_blank" class="github-btn">View on GitHub</a></li>
+    </ul>
+  </nav>  
+
+  <section class="pb-5 position-relative" id="projectteam">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
@@ -66,6 +140,7 @@
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body">
                 <h5 class="mb-0">Barkın Saday</h5>
+                <!-- <a class="logbook-btn" href="" target="_blank">Logbook</a> -->
               </div>
             </div>
           </div>
@@ -82,6 +157,7 @@
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body">
                 <h5 class="mb-0">Mithat Emre Gürbüz</h5>
+                <!-- <a class="logbook-btn" href="" target="_blank">Logbook</a> -->
               </div>
             </div>
           </div>
@@ -100,6 +176,7 @@
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body">
                 <h5 class="mb-0">Yusuf Özyer</h5>
+                <!-- <a class="logbook-btn" href="" target="_blank">Logbook</a> -->
               </div>
             </div>
           </div>
@@ -116,6 +193,7 @@
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body">
                 <h5 class="mb-0">Yağız Berk Uyar</h5>
+                <!-- <a class="logbook-btn" href="" target="_blank">Logbook</a> -->
               </div>
             </div>
           </div>
@@ -134,29 +212,68 @@
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body">
                 <h5 class="mb-0">Zeynep Doğa Dellal</h5>
+                <a class="logbook-btn" href="https://docs.google.com/document/d/1icOG8iVn5-TOaBh-YeSdc_-tCnOM3y4DavrfU4jdYHo/preview" target="_blank">Logbook</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-  <section id="projectspecification" class="mt-5">  
-    <div class="row section-intro">
-        <div class="col-twelve">
+
+      <section id="projectspecification" class="mt-5">
+        <div class="row section-intro">
+          <div class="col-twelve">
             <h5>Project Specification Document</h5>
             <div class="responsive-google-docs">
-                <iframe 
-                    src="https://docs.google.com/document/d/1UtLPAPz2NL5m0Aru5ilSyZ4Vs6zHbwIegfWc3PTfVJI/preview" 
-                    frameborder="0" 
-                    width="100%" 
-                    height="600" 
-                    allowfullscreen="true" 
-                    mozallowfullscreen="true" 
-                    webkitallowfullscreen="true">
-                </iframe>
+              <iframe 
+                src="https://docs.google.com/document/d/1UtLPAPz2NL5m0Aru5ilSyZ4Vs6zHbwIegfWc3PTfVJI/preview" 
+                frameborder="0" 
+                width="100%" 
+                height="600" 
+                allowfullscreen="true" 
+                mozallowfullscreen="true" 
+                webkitallowfullscreen="true">
+              </iframe>
             </div>
-        </div>         
-    </div>
-</section>
+          </div>         
+        </div>
+      </section>
+
+      <section id="projectsanalysis" class="mt-5">
+        <div class="row section-intro">
+          <div class="col-twelve">
+            <h5>Analysis and Requirement Report</h5>
+            <div class="responsive-google-docs">
+              <iframe 
+                src="https://docs.google.com/document/d/174HV56WQ9bo2VPRjQdH1ohWWcbUBCx5VjQb3UNa6x-g/preview" 
+                frameborder="0" 
+                width="100%" 
+                height="600" 
+                allowfullscreen="true" 
+                mozallowfullscreen="true" 
+                webkitallowfullscreen="true">
+              </iframe>
+            </div>
+          </div>         
+        </div>
+      </section>
+      <section id="demopresentation" class="mt-5">
+        <div class="row section-intro">
+          <div class="col-twelve">
+            <h5>Demo Presentation</h5>
+            <div class="responsive-google-docs">
+              <iframe 
+                src="https://drive.google.com/file/d/155ELn7I2-8bK8mvvoIMs2inBMjO93kRg/preview" 
+                frameborder="0" 
+                width="100%" 
+                height="600" 
+                allowfullscreen="true" 
+                mozallowfullscreen="true" 
+                webkitallowfullscreen="true">
+              </iframe>
+            </div>
+          </div>         
+        </div>
+      </section>
     </div>
   </section>
 </body>
